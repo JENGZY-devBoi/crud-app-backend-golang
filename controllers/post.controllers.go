@@ -80,5 +80,5 @@ func PostDelete(c *gin.Context) {
 	var post models.Post
 	initialzers.DB.Delete(&post, id)
 
-	c.Status(200)
+	c.Status(201)
 }
